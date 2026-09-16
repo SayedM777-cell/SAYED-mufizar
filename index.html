@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sayed Mufizar | Creative Developer & Digital Creator</title>
+<meta name="description" content="Portfolio resmi Sayed Mufizar, Creative Developer & Digital Creator. Membangun website modern, interaktif, dan digital experience premium.">
+<meta name="author" content="Sayed Mufizar">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Sayed Mufizar | Creative Developer & Digital Creator">
+<meta property="og:description" content="Saya menciptakan website modern, interaktif, dan digital experience yang menggabungkan kreativitas dengan teknologi.">
+<meta property="og:type" content="website">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-logo">SM</div>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<!-- BACKGROUND LAYERS -->
+<div class="bg-layer" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="blob blob-cyan"></div>
+  <div class="blob blob-purple"></div>
+  <canvas id="particles"></canvas>
+</div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <nav class="nav-container">
+    <a href="#home" class="logo" aria-label="Kembali ke Beranda">SM<span class="logo-dot">.</span></a>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home" class="nav-link active-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-text">
+        <p class="hero-hello reveal-up">HELLO, I'M</p>
+        <h1 class="hero-name reveal-up">SAYED MUFIZAR</h1>
+        <p class="hero-role reveal-up">
+          <span id="typedRole"></span><span class="type-cursor">|</span>
+        </p>
+        <p class="hero-desc reveal-up">
+          Saya menciptakan website modern, interaktif, dan digital experience yang menggabungkan kreativitas dengan teknologi.
+        </p>
+        <div class="hero-buttons reveal-up">
+          <a href="#projects" class="btn btn-primary" data-cursor="hover">
+            <span>View My Work</span>
+          </a>
+          <a href="#contact" class="btn btn-outline" data-cursor="hover">
+            <span>Contact Me</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orb-wrap">
+          <div class="orb-core"></div>
+          <div class="orb-ring ring-1"></div>
+          <div class="orb-ring ring-2"></div>
+          <div class="orb-ring ring-3"></div>
+          <div class="shape shape-tri"></div>
+          <div class="shape shape-square"></div>
+          <div class="shape shape-circle"></div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll ke bawah">
+      <span class="scroll-mouse"><span class="scroll-dot"></span></span>
+    </a>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="section-inner">
+      <h2 class="section-title reveal-up">ABOUT ME</h2>
+
+      <div class="about-grid">
+        <div class="about-image reveal-up">
+          <div class="image-frame">
+            <div class="image-placeholder" role="img" aria-label="Foto profil Sayed Mufizar">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="frame-glow"></div>
+          </div>
+        </div>
+
+        <div class="about-content reveal-up">
+          <p class="about-text">
+            Saya <strong>Sayed Mufizar</strong>, seorang Creative Developer & Digital Creator yang memiliki ketertarikan pada pengembangan website, desain digital, dan teknologi modern.
+          </p>
+
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+              <p class="stat-label">Projects</p>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+              <p class="stat-label">Years Learning</p>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="100">0</span><span class="stat-plus">%</span>
+              <p class="stat-label">Passion</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills" id="skills">
+    <div class="section-inner">
+      <h2 class="section-title reveal-up">MY SKILLS</h2>
+
+      <div class="skills-grid">
+        <article class="skill-card reveal-up" data-cursor="hover">
+          <i class="fa-brands fa-html5 skill-icon"></i>
+          <h3 class="skill-name">HTML</h3>
+          <div class="progress-bar"><div class="progress-fill" data-progress="95"></div></div>
+          <span class="skill-percent">95%</span>
+        </article>
+
+        <article class="skill-card reveal-up" data-cursor="hover">
+          <i class="fa-brands fa-css3-alt skill-icon"></i>
+          <h3 class="skill-name">CSS</h3>
+          <div class="progress-bar"><div class="progress-fill" data-progress="90"></div></div>
+          <span class="skill-percent">90%</span>
+        </article>
+
+        <article class="skill-card reveal-up" data-cursor="hover">
+          <i class="fa-brands fa-js skill-icon"></i>
+          <h3 class="skill-name">JavaScript</h3>
+          <div class="progress-bar"><div class="progress-fill" data-progress="85"></div></div>
+          <span class="skill-percent">85%</span>
+        </article>
+
+        <article class="skill-card reveal-up" data-cursor="hover">
+          <i class="fa-solid fa-pen-ruler skill-icon"></i>
+          <h3 class="skill-name">UI/UX Design</h3>
+          <div class="progress-bar"><div class="progress-fill" data-progress="88"></div></div>
+          <span class="skill-percent">88%</span>
+        </article>
+
+        <article class="skill-card reveal-up" data-cursor="hover">
+          <i class="fa-solid fa-mobile-screen skill-icon"></i>
+          <h3 class="skill-name">Responsive Design</h3>
+          <div class="progress-bar"><div class="progress-fill" data-progress="92"></div></div>
+          <span class="skill-percent">92%</span>
+        </article>
+
+        <article class="skill-card reveal-up" data-cursor="hover">
+          <i class="fa-brands fa-git-alt skill-icon"></i>
+          <h3 class="skill-name">Git & GitHub</h3>
+          <div class="progress-bar"><div class="progress-fill" data-progress="80"></div></div>
+          <span class="skill-percent">80%</span>
+        </article>
+
+        <article class="skill-card reveal-up" data-cursor="hover">
+          <i class="fa-solid fa-palette skill-icon"></i>
+          <h3 class="skill-name">Creative Design</h3>
+          <div class="progress-bar"><div class="progress-fill" data-progress="87"></div></div>
+          <span class="skill-percent">87%</span>
+        </article>
+
+        <article class="skill-card reveal-up" data-cursor="hover">
+          <i class="fa-solid fa-code skill-icon"></i>
+          <h3 class="skill-name">Web Development</h3>
+          <div class="progress-bar"><div class="progress-fill" data-progress="90"></div></div>
+          <span class="skill-percent">90%</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects" id="projects">
+    <div class="section-inner">
+      <h2 class="section-title reveal-up">FEATURED PROJECTS</h2>
+
+      <div class="projects-grid">
+        <article class="project-card reveal-up" data-cursor="hover">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fa-solid fa-id-card"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="btn-sm" aria-label="Lihat demo Personal Portfolio">Live Demo</a>
+              <a href="#" class="btn-sm btn-sm-outline" aria-label="Lihat kode Personal Portfolio">View Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Personal Portfolio</h3>
+            <p>Website portofolio pribadi dengan tema dark futuristic dan animasi interaktif.</p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up" data-cursor="hover">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="btn-sm" aria-label="Lihat demo E-Commerce Website">Live Demo</a>
+              <a href="#" class="btn-sm btn-sm-outline" aria-label="Lihat kode E-Commerce Website">View Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>E-Commerce Website</h3>
+            <p>Platform belanja online dengan tampilan modern dan pengalaman checkout yang mulus.</p>
+            <div class="tech-tags"><span>React</span><span>Node.js</span><span>CSS</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up" data-cursor="hover">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fa-solid fa-bolt"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="btn-sm" aria-label="Lihat demo Landing Page">Live Demo</a>
+              <a href="#" class="btn-sm btn-sm-outline" aria-label="Lihat kode Landing Page">View Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Landing Page</h3>
+            <p>Landing page konversi tinggi untuk peluncuran produk dan bisnis digital.</p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up" data-cursor="hover">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="btn-sm" aria-label="Lihat demo Dashboard UI">Live Demo</a>
+              <a href="#" class="btn-sm btn-sm-outline" aria-label="Lihat kode Dashboard UI">View Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Dashboard UI</h3>
+            <p>Antarmuka dashboard analitik dengan visualisasi data yang bersih dan informatif.</p>
+            <div class="tech-tags"><span>Vue</span><span>Chart.js</span><span>CSS</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up" data-cursor="hover">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="btn-sm" aria-label="Lihat demo Creative Website">Live Demo</a>
+              <a href="#" class="btn-sm btn-sm-outline" aria-label="Lihat kode Creative Website">View Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Creative Website</h3>
+            <p>Website eksperimental dengan animasi kreatif dan interaksi yang unik.</p>
+            <div class="tech-tags"><span>GSAP</span><span>HTML</span><span>CSS</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up" data-cursor="hover">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fa-solid fa-building"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="btn-sm" aria-label="Lihat demo Digital Business Website">Live Demo</a>
+              <a href="#" class="btn-sm btn-sm-outline" aria-label="Lihat kode Digital Business Website">View Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Digital Business Website</h3>
+            <p>Website profil bisnis profesional yang dirancang untuk membangun kepercayaan.</p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services" id="services">
+    <div class="section-inner">
+      <h2 class="section-title reveal-up">WHAT I DO</h2>
+
+      <div class="services-grid">
+        <article class="service-card reveal-up" data-cursor="hover">
+          <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Web Development</h3>
+          <p>Membangun website modern, cepat, responsive, dan interaktif.</p>
+        </article>
+
+        <article class="service-card reveal-up" data-cursor="hover">
+          <div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div>
+          <h3>UI/UX Design</h3>
+          <p>Membuat interface yang modern, clean, dan mudah digunakan.</p>
+        </article>
+
+        <article class="service-card reveal-up" data-cursor="hover">
+          <div class="service-icon"><i class="fa-solid fa-rocket"></i></div>
+          <h3>Landing Page</h3>
+          <p>Membuat landing page profesional untuk bisnis dan personal branding.</p>
+        </article>
+
+        <article class="service-card reveal-up" data-cursor="hover">
+          <div class="service-icon"><i class="fa-solid fa-cubes"></i></div>
+          <h3>Digital Creative</h3>
+          <p>Membuat pengalaman digital yang kreatif dan menarik.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY / EXPERIENCE SECTION -->
+  <section class="journey" id="journey">
+    <div class="section-inner">
+      <h2 class="section-title reveal-up">MY JOURNEY</h2>
+
+      <div class="timeline">
+        <div class="timeline-line" id="timelineLine"></div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Started Learning Web Development</h3>
+            <p>Memulai perjalanan dengan mempelajari dasar-dasar HTML, CSS, dan JavaScript.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Built First Website</h3>
+            <p>Menyelesaikan website pertama dan mulai memahami alur kerja developer.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Started Creating Digital Projects</h3>
+            <p>Mulai mengerjakan proyek digital nyata untuk melatih kemampuan desain dan coding.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Exploring Modern Web Technologies</h3>
+            <p>Terus mengeksplorasi teknologi web modern untuk meningkatkan kualitas karya.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <h2 class="section-title reveal-up">LET'S WORK TOGETHER</h2>
+      <p class="contact-sub reveal-up">Have an idea or project in mind? Let's create something amazing together.</p>
+
+      <div class="contact-grid">
+        <form class="contact-form reveal-up" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit" data-cursor="hover">
+            <span>Send Message</span>
+          </button>
+        </form>
+
+        <div class="contact-social reveal-up">
+          <p class="social-lead">Terhubung dengan saya melalui:</p>
+          <div class="social-links">
+            <a href="#" class="social-link" data-cursor="hover" aria-label="Kunjungi GitHub Sayed Mufizar">
+              <i class="fa-brands fa-github"></i><span>GitHub</span>
+            </a>
+            <a href="#" class="social-link" data-cursor="hover" aria-label="Kunjungi Instagram Sayed Mufizar">
+              <i class="fa-brands fa-instagram"></i><span>Instagram</span>
+            </a>
+            <a href="#" class="social-link" data-cursor="hover" aria-label="Kunjungi LinkedIn Sayed Mufizar">
+              <i class="fa-brands fa-linkedin"></i><span>LinkedIn</span>
+            </a>
+            <a href="#" class="social-link" data-cursor="hover" aria-label="Hubungi Sayed Mufizar via WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-name">SAYED MUFIZAR</p>
+    <p class="footer-role">Creative Developer & Digital Creator</p>
+    <p class="footer-copy">&copy; 2026 Sayed Mufizar. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- TOAST NOTIFICATION -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <i class="fa-solid fa-circle-check"></i>
+  <span>Pesan berhasil dikirim!</span>
+</div>
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
